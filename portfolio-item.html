@@ -4,159 +4,340 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vishnu Vardhan | Project Details</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Detailed case study and project overview by Vishnu Vardhan, AI/ML Engineer.">
+    <meta name="author" content="Vishnu Vardhan">
+
+    <!-- Match the fonts from index.html -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,800|Roboto+Slab:400,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Inter:300,400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Project-Specific Styles (so you don't have to edit style.css again) -->
+    <style>
+        .back-link {
+            display: inline-block;
+            margin: 2em 2em 0;
+            color: var(--clr-accent-light);
+            text-decoration: none;
+            font-weight: 600;
+            font-family: var(--ff-heading);
+            transition: var(--transition);
+        }
+        .back-link:hover {
+            color: var(--clr-white);
+            transform: translateX(-5px);
+        }
+        .portfolio-item-individual {
+            padding: 0 2em 6em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .project-meta {
+            display: flex;
+            gap: 0.8em;
+            flex-wrap: wrap;
+            margin-bottom: 3em;
+            justify-content: center;
+        }
+        .project-tech {
+            background: rgba(124, 58, 237, 0.1);
+            border: 1px solid var(--clr-accent);
+            color: var(--clr-accent-light);
+            padding: 0.4em 1em;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            font-family: var(--ff-heading);
+        }
+        .project-overview, .project-highlights, .project-tech-stack {
+            margin-bottom: 2.5em;
+            background: var(--clr-card);
+            padding: 2em;
+            border-radius: var(--radius);
+            border: 1px solid var(--clr-card-border);
+        }
+        .project-overview h3, .project-highlights h3, .project-tech-stack h3 {
+            color: var(--clr-accent-light);
+            border-bottom: 1px solid var(--clr-card-border);
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+        .project-highlights ul, .project-tech-stack ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .project-highlights li, .project-tech-stack li {
+            margin-bottom: 0.8em;
+            padding-left: 1.5em;
+            position: relative;
+        }
+        .project-highlights li::before, .project-tech-stack li::before {
+            content: '▹';
+            color: var(--clr-accent-light);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        .project-links {
+            display: flex;
+            gap: 1em;
+            margin-top: 3em;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        /* Wrapper to help JS easily switch between projects */
+        .project-wrapper { display: none; }
+        .project-wrapper.active { display: block; }
+    </style>
 </head>
 <body>
-    <header>
+
+    <!-- MATCHED HEADER -->
+    <header class="header">
         <div class="logo">
-            <img src="img/devjane.png" alt="Vishnu Vardhan Logo">
+            <img src="img/vishnu-logo.png" alt="Vishnu Vardhan Logo">
         </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
+
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
             <span class="hamburger"></span>
         </button>
-        <nav class="nav">
+
+        <nav class="nav" aria-label="Main Navigation">
             <ul class="nav__list">
-                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="index.html#skills" class="nav__link">My Skills</a></li>
-                <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
-                <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
-                <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+                <li><a href="index.html#home" class="nav__link">Home</a></li>
+                <li><a href="index.html#skills" class="nav__link">Skills</a></li>
+                <li><a href="index.html#about" class="nav__link">About</a></li>
+                <li><a href="index.html#work" class="nav__link">Projects</a></li>
+                <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+                <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="nav__link nav__link--btn">Resume</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Project: AI-Powered FARMIN-AI -->
-    <section class="intro" id="project-farmin-ai">
-        <h1 class="section__title section__title--intro">
-            AI-Powered <strong>FARMIN-AI</strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">Full-Stack Conversational AI System</p>
-        <img src="img/portfolio-01.jpg" alt="FARMIN-AI Project" class="intro__img">
-    </section>
-
-    <div class="portfolio-item-individual">
-        <div class="project-meta">
-            <span class="project-tech">Python</span>
-            <span class="project-tech">Kaggle</span>
-            <span class="project-tech">Streamlit</span>
-            <span class="project-tech">Hugging Face</span>
+    <main>
+        <div style="max-width: 1200px; margin: auto;">
+            <a href="index.html#work" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
         </div>
 
-        <div class="project-overview">
-            <h3>Project Overview</h3>
-            <p>Built a comprehensive conversational AI system designed to assist farmers with agricultural decisions. The platform provides intelligent recommendations for farming practices, crop selection, and problem-solving through an intuitive chat interface.</p>
+        <!-- ========================================== -->
+        <!-- PROJECT 1: FARMIN-AI -->
+        <!-- ========================================== -->
+        <div class="project-wrapper" id="wrapper-farmin-ai">
+            <section class="intro">
+                <div class="intro__content">
+                    <h1 class="section__title section__title--intro">
+                        AI-Powered <strong>FARMIN-AI</strong>
+                    </h1>
+                    <p class="section__subtitle section__subtitle--intro">Full-Stack Conversational AI System</p>
+                </div>
+                <img src="img/portfolio-01.jpg" alt="FARMIN-AI Project" class="intro__img">
+            </section>
+
+            <div class="portfolio-item-individual">
+                <div class="project-meta">
+                    <span class="project-tech">Python</span>
+                    <span class="project-tech">Streamlit</span>
+                    <span class="project-tech">Hugging Face</span>
+                    <span class="project-tech">Machine Learning</span>
+                </div>
+
+                <div class="project-overview">
+                    <h3>Project Overview</h3>
+                    <p>Built a comprehensive conversational AI system designed to assist farmers with agricultural decisions. The platform provides intelligent recommendations for farming practices, crop selection, and problem-solving through an intuitive chat interface.</p>
+                </div>
+
+                <div class="project-highlights">
+                    <h3>Key Achievements & Actions</h3>
+                    <ul>
+                        <li>Developed a full-stack application using Streamlit for seamless user interaction.</li>
+                        <li>Trained and integrated machine learning models achieving reliable prediction accuracy.</li>
+                        <li>Deployed the application on Streamlit Cloud for accessible, farmer-friendly usage.</li>
+                        <li>Implemented natural language processing for understanding and routing complex farmer queries.</li>
+                    </ul>
+                </div>
+
+                <div class="project-tech-stack">
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li><strong>Frontend:</strong> Streamlit</li>
+                        <li><strong>Backend & Logic:</strong> Python</li>
+                        <li><strong>ML Frameworks:</strong> Hugging Face Transformers, Scikit-learn</li>
+                        <li><strong>Data Processing:</strong> Pandas, NumPy</li>
+                    </ul>
+                </div>
+
+                <div class="project-links">
+                    <a href="#" class="btn" target="_blank">View Live Demo</a>
+                    <a href="#" class="btn btn--outline" target="_blank"><i class="fab fa-github"></i> GitHub Repo</a>
+                </div>
+            </div>
         </div>
 
-        <div class="project-highlights">
-            <h3>Key Achievements</h3>
-            <ul>
-                <li>Developed a full-stack application using Streamlit for seamless user interaction</li>
-                <li>Trained and integrated machine learning models achieving 60% prediction accuracy</li>
-                <li>Deployed the application on Streamlit Cloud for accessible, farmer-friendly usage</li>
-                <li>Implemented natural language processing for understanding farmer queries</li>
-            </ul>
+        <!-- ========================================== -->
+        <!-- PROJECT 2: DWLR Monitoring -->
+        <!-- ========================================== -->
+        <div class="project-wrapper" id="wrapper-dwlr-monitoring">
+            <section class="intro">
+                <div class="intro__content">
+                    <h1 class="section__title section__title--intro">
+                        DWLR Data <strong>Monitoring Tool</strong>
+                    </h1>
+                    <p class="section__subtitle section__subtitle--intro">Smart India Hackathon 2024</p>
+                </div>
+                <img src="img/portfolio-02.jpg" alt="DWLR Monitoring Tool" class="intro__img">
+            </section>
+
+            <div class="portfolio-item-individual">
+                <div class="project-meta">
+                    <span class="project-tech">Python</span>
+                    <span class="project-tech">Data Processing</span>
+                    <span class="project-tech">Collaborative Filtering</span>
+                    <span class="project-tech">Anomaly Detection</span>
+                </div>
+
+                <div class="project-overview">
+                    <h3>Project Overview</h3>
+                    <p>Designed and implemented a prototype for monitoring Digital Water Level Recording (DWLR) devices, capable of processing over 1,000 readings daily with advanced anomaly detection capabilities.</p>
+                </div>
+
+                <div class="project-highlights">
+                    <h3>Key Achievements</h3>
+                    <ul>
+                        <li>Processed 1,000+ DWLR readings per day with automated data validation pipelines.</li>
+                        <li>Implemented collaborative filtering between faulty detectors for enhanced accuracy.</li>
+                        <li>Developed anomaly detection algorithms to identify irregular water level patterns instantly.</li>
+                        <li>Created intuitive dashboards for real-time monitoring and reporting.</li>
+                    </ul>
+                </div>
+
+                <div class="project-links">
+                    <a href="#" class="btn" target="_blank">Project Details</a>
+                    <a href="#" class="btn btn--outline" target="_blank"><i class="fab fa-github"></i> GitHub Repo</a>
+                </div>
+            </div>
         </div>
 
-        <div class="project-tech-stack">
-            <h3>Technologies Used</h3>
-            <ul>
-                <li><strong>Frontend:</strong> Streamlit</li>
-                <li><strong>Backend:</strong> Python</li>
-                <li><strong>ML Frameworks:</strong> Hugging Face Transformers, Scikit-learn</li>
-                <li><strong>Data Processing:</strong> Pandas, NumPy</li>
-                <li><strong>Deployment:</strong> Streamlit Cloud</li>
-            </ul>
+        <!-- ========================================== -->
+        <!-- PROJECT 3: Telugu Speech Corpus -->
+        <!-- ========================================== -->
+        <div class="project-wrapper" id="wrapper-telugu-speech">
+            <section class="intro">
+                <div class="intro__content">
+                    <h1 class="section__title section__title--intro">
+                        Telugu <strong>Speech Corpus</strong>
+                    </h1>
+                    <p class="section__subtitle section__subtitle--intro">Research Internship at VISWAM.AI (IIITH)</p>
+                </div>
+                <img src="img/portfolio-03.jpg" alt="Speech Corpus Project" class="intro__img">
+            </section>
+
+            <div class="portfolio-item-individual">
+                <div class="project-meta">
+                    <span class="project-tech">NLP</span>
+                    <span class="project-tech">Speech Recognition</span>
+                    <span class="project-tech">Data Annotation</span>
+                </div>
+
+                <div class="project-overview">
+                    <h3>Project Overview</h3>
+                    <p>During my internship at IIIT Hyderabad, I spearheaded the creation of a massive 80+ hour Telugu speech corpus to help train localized NLP and speech-to-text models.</p>
+                </div>
+
+                <div class="project-highlights">
+                    <h3>Key Responsibilities</h3>
+                    <ul>
+                        <li>Led meticulous data annotation for over 80 hours of raw Telugu audio.</li>
+                        <li>Performed rigorous model evaluation and validation to ensure dataset quality.</li>
+                        <li>Collaborated with AI researchers to optimize data pipelines for regional language models.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <div class="project-links">
-            <a href="#" class="btn">View Live Demo</a>
-            <a href="#" class="btn btn-secondary">GitHub Repository</a>
-        </div>
-    </div>
+        <!-- ========================================== -->
+        <!-- PROJECT 4: AI Chatbot -->
+        <!-- ========================================== -->
+        <div class="project-wrapper" id="wrapper-ai-chatbot">
+            <section class="intro">
+                <div class="intro__content">
+                    <h1 class="section__title section__title--intro">
+                        Conversational <strong>AI Chatbot</strong>
+                    </h1>
+                    <p class="section__subtitle section__subtitle--intro">Hugging Face Transformers</p>
+                </div>
+                <img src="img/portfolio-04.jpg" alt="AI Chatbot Project" class="intro__img">
+            </section>
 
-    <!-- Project: DWLR Monitoring Tool -->
-    <section class="intro" id="project-dwlr-monitoring" style="display: none;">
-        <h1 class="section__title section__title--intro">
-            DWLR Data <strong>Monitoring Tool</strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">Smart India Hackathon 2024</p>
-        <img src="img/portfolio-02.jpg" alt="DWLR Monitoring Tool" class="intro__img">
-    </section>
+            <div class="portfolio-item-individual">
+                <div class="project-meta">
+                    <span class="project-tech">Hugging Face</span>
+                    <span class="project-tech">Python</span>
+                    <span class="project-tech">LLMs</span>
+                </div>
 
-    <div class="portfolio-item-individual" style="display: none;">
-        <div class="project-meta">
-            <span class="project-tech">Python</span>
-            <span class="project-tech">Data Processing</span>
-            <span class="project-tech">Collaborative Filtering</span>
-        </div>
+                <div class="project-overview">
+                    <h3>Project Overview</h3>
+                    <p>Developed a custom conversational AI assistant leveraging pre-trained Large Language Models (LLMs) via Hugging Face to provide accurate, context-aware responses to user queries.</p>
+                </div>
 
-        <div class="project-overview">
-            <h3>Project Overview</h3>
-            <p>Designed and implemented a prototype for monitoring Digital Water Level Recording (DWLR) devices, capable of processing over 1,000 readings daily with advanced anomaly detection capabilities.</p>
-        </div>
-
-        <div class="project-highlights">
-            <h3>Key Achievements</h3>
-            <ul>
-                <li>Processed 1,000+ DWLR readings per day with automated data validation</li>
-                <li>Implemented collaborative filtering between faulty detectors for enhanced accuracy</li>
-                <li>Developed anomaly detection algorithms to identify irregular water level patterns</li>
-                <li>Created intuitive dashboards for real-time monitoring and reporting</li>
-            </ul>
+                <div class="project-links">
+                    <a href="#" class="btn btn--outline" target="_blank"><i class="fab fa-github"></i> GitHub Repo</a>
+                </div>
+            </div>
         </div>
 
-        <div class="project-links">
-            <a href="#" class="btn">Project Details</a>
-            <a href="#" class="btn btn-secondary">GitHub Repository</a>
-        </div>
-    </div>
+    </main>
 
-    <!-- Footer -->
+    <!-- MATCHED FOOTER -->
     <footer class="footer">
-        <a href="mailto:vishnuvardhancv128@gmail.com" class="footer__link">vishnuvardhancv128@gmail.com</a>
+        <h3 class="footer__title">Let’s Build Something Impactful 🚀</h3>
+        <p>I’m actively looking for AI/ML opportunities.</p>
+        
+        <a href="mailto:vishnuvardhancv128@gmail.com" class="footer__link">
+            vishnuvardhancv128@gmail.com
+        </a>
+        
+        <p><i class="fas fa-phone"></i> +91-8309599573</p>
+        
         <ul class="social-list">
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/vishnu3vardhan" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://linkedin.com/in/vishnuvardhan028" target="_blank">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link" href="https://kaggle.com/vishnuvardhan" target="_blank">
-                    <i class="fab fa-kaggle"></i>
-                </a>
-            </li>
+            <li><a href="https://github.com/vishnu3vardhan" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/in/vishnuvardhan028" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://kaggle.com/vishnuvardhan" target="_blank" rel="noopener noreferrer"><i class="fab fa-kaggle"></i></a></li>
+            <li><a href="https://huggingface.co/vishnuvardhan" target="_blank" rel="noopener noreferrer"><i class="fas fa-robot"></i></a></li>
         </ul>
+        
+        <p class="footer__copyright">© 2026 Vishnu Vardhan</p>
     </footer>
 
     <script src="js/index.js"></script>
+    
+    <!-- Robust Routing Script -->
     <script>
-        // Simple routing for project pages
-        const urlParams = new URLSearchParams(window.location.search);
-        const project = urlParams.get('project');
-        
-        if (project) {
-            // Hide all project sections
-            document.querySelectorAll('.intro, .portfolio-item-individual').forEach(el => {
-                el.style.display = 'none';
-            });
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const projectParam = urlParams.get('project');
             
-            // Show selected project
-            const projectSection = document.getElementById(`project-${project}`);
-            const projectDetail = projectSection?.nextElementSibling;
+            // Hide all project wrappers first
+            const wrappers = document.querySelectorAll('.project-wrapper');
+            wrappers.forEach(w => w.classList.remove('active'));
             
-            if (projectSection && projectDetail) {
-                projectSection.style.display = 'block';
-                projectDetail.style.display = 'block';
+            // If URL has a project param, try to find and show it
+            if (projectParam) {
+                const activeProject = document.getElementById(`wrapper-${projectParam}`);
+                if (activeProject) {
+                    activeProject.classList.add('active');
+                } else {
+                    // Fallback to the first project if the ID is wrong
+                    document.getElementById('wrapper-farmin-ai').classList.add('active');
+                }
+            } else {
+                // Fallback to the first project if no param is given in the URL
+                document.getElementById('wrapper-farmin-ai').classList.add('active');
             }
-        }
+        });
     </script>
 </body>
 </html>

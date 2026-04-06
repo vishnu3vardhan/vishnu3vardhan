@@ -6,16 +6,33 @@
 
     <title>Vishnu Vardhan | AI/ML Engineer</title>
 
-    <!-- SEO -->
-    <meta name="description" content="Vishnu Vardhan - AI/ML Engineer specializing in NLP, speech recognition, and full-stack development.">
-    <meta name="keywords" content="AI Engineer, Machine Learning, NLP, Portfolio, Vishnu Vardhan">
+    <!-- SEO & Meta Tags -->
+    <meta name="description" content="Vishnu Vardhan - AI/ML Engineer specializing in NLP, speech recognition, and full-stack development. Actively seeking AI/ML opportunities.">
+    <meta name="keywords" content="AI Engineer, Machine Learning, NLP, Portfolio, Vishnu Vardhan, Data Science, Python, Full Stack">
     <meta name="author" content="Vishnu Vardhan">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph for Social Media Preview Cards -->
+    <meta property="og:title" content="Vishnu Vardhan | AI/ML Engineer Portfolio">
+    <meta property="og:description" content="Explore my projects in NLP, Machine Learning, and Full-Stack Development.">
+    <meta property="og:image" content="img/acc.jpg">
+    <meta property="og:type" content="website">
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Inter:300,400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Quick Inline Enhancements -->
+    <style>
+        html {
+            scroll-behavior: smooth; /* Enables smooth scrolling for navigation links */
+        }
+        /* Basic styling for the added contact form to integrate with your existing CSS */
+        .contact-form { max-width: 600px; margin: 0 auto; text-align: left; }
+        .contact-form input, .contact-form textarea { width: 100%; padding: 0.8em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px; font-family: 'Inter', sans-serif;}
+    </style>
 </head>
 
 <body>
@@ -23,187 +40,217 @@
 <!-- HEADER -->
 <header class="header">
     <div class="logo">
-        <img src="img/vishnu-logo.png" alt="Vishnu Logo">
+        <img src="img/vishnu-logo.png" alt="Vishnu Vardhan Logo">
     </div>
 
-    <button class="nav-toggle" aria-label="toggle navigation">
+    <button class="nav-toggle" aria-label="Toggle navigation menu">
         <span class="hamburger"></span>
     </button>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Main Navigation">
         <ul class="nav__list">
             <li><a href="#home" class="nav__link">Home</a></li>
             <li><a href="#skills" class="nav__link">Skills</a></li>
             <li><a href="#about" class="nav__link">About</a></li>
             <li><a href="#work" class="nav__link">Projects</a></li>
             <li><a href="#contact" class="nav__link">Contact</a></li>
-            <li><a href="resume.pdf" target="_blank" class="nav__link nav__link--btn">Resume</a></li>
+            <li><a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="nav__link nav__link--btn">Resume</a></li>
         </ul>
     </nav>
 </header>
 
-<!-- HERO -->
-<section class="intro" id="home">
-    <div class="intro__content">
-        <h1 class="section__title section__title--intro">
-            Building <strong>AI Solutions</strong><br>That Solve Real Problems
-        </h1>
+<!-- MAIN CONTENT WRAPPER -->
+<main>
 
-        <p class="section__subtitle section__subtitle--intro">
-            AI/ML Engineer specializing in NLP, Speech Recognition & Data Systems
-        </p>
+    <!-- HERO -->
+    <section class="intro" id="home">
+        <div class="intro__content">
+            <h1 class="section__title section__title--intro">
+                Building <strong>AI Solutions</strong><br>That Solve Real Problems
+            </h1>
 
-        <div class="intro__cta">
-            <a href="#work" class="btn">View Projects</a>
-            <a href="resume.pdf" class="btn btn--outline" target="_blank">Download Resume</a>
-        </div>
-    </div>
-
-    <img src="img/acc.jpg" alt="Vishnu Vardhan" class="intro__img">
-</section>
-
-<!-- SKILLS -->
-<section class="my-services" id="skills">
-    <h2 class="section__title">Core Skills</h2>
-
-    <div class="services">
-
-        <div class="service">
-            <h3><i class="fas fa-brain"></i> AI & Machine Learning</h3>
-            <p class="service-tech">
-                TensorFlow • PyTorch • Scikit-learn • Hugging Face
+            <p class="section__subtitle section__subtitle--intro">
+                AI/ML Engineer specializing in NLP, Speech Recognition & Data Systems
             </p>
+
+            <div class="intro__cta">
+                <a href="#work" class="btn">View Projects</a>
+                <a href="resume.pdf" class="btn btn--outline" target="_blank" rel="noopener noreferrer">Download Resume</a>
+            </div>
         </div>
 
-        <div class="service">
-            <h3><i class="fas fa-code"></i> Full-Stack Development</h3>
-            <p class="service-tech">
-                Python • Java • C++ • Streamlit • Web Apps
+        <img src="img/acc.jpg" alt="Portrait of Vishnu Vardhan" class="intro__img">
+    </section>
+
+    <!-- SKILLS -->
+    <section class="my-services" id="skills">
+        <h2 class="section__title">Core Technical Skills</h2>
+
+        <div class="services">
+            <div class="service">
+                <h3><i class="fas fa-brain" aria-hidden="true"></i> AI & Machine Learning</h3>
+                <p class="service-tech">
+                    TensorFlow • PyTorch • Scikit-learn • Hugging Face
+                </p>
+                <p>Designing, training, and deploying robust predictive models and deep learning architectures.</p>
+            </div>
+
+            <div class="service">
+                <h3><i class="fas fa-code" aria-hidden="true"></i> Full-Stack Development</h3>
+                <p class="service-tech">
+                    Python • Java • C++ • Streamlit • Web Apps
+                </p>
+                <p>Bridging the gap between intelligent backend logic and user-friendly frontend interfaces.</p>
+            </div>
+
+            <div class="service">
+                <h3><i class="fas fa-database" aria-hidden="true"></i> Data Science & Analytics</h3>
+                <p class="service-tech">
+                    Pandas • NumPy • SQL • Data Visualization
+                </p>
+                <p>Extracting actionable insights from complex datasets using advanced data processing techniques.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-me" id="about">
+        <h2 class="section__title">About Me</h2>
+
+        <div class="about-me__body">
+            <p>
+                I'm a Computer Science graduate driven by a passion for building intelligent systems using AI and data. 
+                I specialize in <strong>Natural Language Processing (NLP)</strong>, speech recognition, and scalable machine learning solutions.
             </p>
-        </div>
 
-        <div class="service">
-            <h3><i class="fas fa-database"></i> Data Science</h3>
-            <p class="service-tech">
-                Pandas • NumPy • SQL • Data Visualization
+            <p>
+                During my internship at <strong>VISWAM.AI (IIIT Hyderabad)</strong>, I led the creation of an extensive Telugu speech corpus (80+ hours). My role involved meticulous data annotation, rigorous model evaluation, and quality validation to enhance regional language AI models.
             </p>
-        </div>
 
-    </div>
-</section>
+            <p>
+                I thrive on solving real-world problems and am continuously expanding my expertise in artificial intelligence, backend infrastructure, and modern software development practices.
+            </p>
 
-<!-- ABOUT -->
-<section class="about-me" id="about">
-    <h2 class="section__title">About Me</h2>
-
-    <div class="about-me__body">
-        <p>
-            I'm a Computer Science graduate passionate about building intelligent systems using AI and data. 
-            I specialize in NLP, speech recognition, and scalable machine learning solutions.
-        </p>
-
-        <p>
-            During my internship at <strong>VISWAM.AI (IIITH)</strong>, I worked on creating a Telugu speech corpus (80+ hours), 
-            focusing on data annotation, model evaluation, and quality validation.
-        </p>
-
-        <p>
-            I enjoy solving real-world problems and continuously improving my skills in AI, backend systems, 
-            and modern development practices.
-        </p>
-
-        <div class="education-highlight">
-            <h4>Education</h4>
-            <p><strong>B.Tech - Computer Science</strong></p>
-            <p>MLRITM (2021 – 2025) | CGPA: 7.02</p>
-        </div>
-    </div>
-
-    <img src="img/vishnu.jpg" alt="Vishnu Vardhan" class="about-me__img">
-</section>
-
-<!-- WHY HIRE ME -->
-<section class="why-me">
-    <h2 class="section__title">Why Hire Me?</h2>
-
-    <div class="why-me__grid">
-        <div>✔ Real-world AI/ML experience</div>
-        <div>✔ Internship at IIITH</div>
-        <div>✔ Strong problem-solving mindset</div>
-        <div>✔ Full-stack capability</div>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section class="my-work" id="work">
-    <h2 class="section__title">Projects</h2>
-    <p class="section__subtitle">Real-world applications I've built</p>
-
-    <div class="portfolio">
-
-        <a href="portfolio-item.html?project=farmin-ai" class="portfolio__item">
-            <img src="img/portfolio-01.jpg" class="portfolio__img">
-            <div class="portfolio__overlay">
-                <h3>FARMIN-AI</h3>
-                <p>Crop prediction system using ML</p>
-                <span>Python • Streamlit</span>
+            <div class="education-highlight">
+                <h4>🎓 Education</h4>
+                <p><strong>B.Tech - Computer Science</strong></p>
+                <p>MLR Institute of Technology and Management (2021 – 2025)<br>CGPA: 7.02</p>
             </div>
-        </a>
-
-        <a href="portfolio-item.html?project=dwlr-monitoring" class="portfolio__item">
-            <img src="img/portfolio-02.jpg" class="portfolio__img">
-            <div class="portfolio__overlay">
-                <h3>DWLR Monitoring</h3>
-                <p>Smart India Hackathon project</p>
-                <span>Data Systems</span>
-            </div>
-        </a>
-
-        <a href="portfolio-item.html?project=telugu-speech" class="portfolio__item">
-            <img src="img/portfolio-03.jpg" class="portfolio__img">
-            <div class="portfolio__overlay">
-                <h3>Speech Corpus</h3>
-                <p>80+ hrs Telugu dataset</p>
-                <span>NLP • Speech</span>
-            </div>
-        </a>
-
-        <a href="portfolio-item.html?project=ai-chatbot" class="portfolio__item">
-            <img src="img/portfolio-04.jpg" class="portfolio__img">
-            <div class="portfolio__overlay">
-                <h3>AI Chatbot</h3>
-                <p>Conversational AI system</p>
-                <span>Hugging Face</span>
-            </div>
-        </a>
-
-    </div>
-</section>
-
-<!-- ACHIEVEMENTS -->
-<section class="achievements">
-    <h2 class="section__title">Achievements</h2>
-
-    <div class="achievements-grid">
-        <div class="achievement-card">
-            <i class="fas fa-code"></i>
-            <h3>Smart Coder</h3>
         </div>
 
-        <div class="achievement-card">
-            <i class="fas fa-network-wired"></i>
-            <h3>Google IT Support</h3>
-        </div>
+        <img src="img/vishnu.jpg" alt="Vishnu Vardhan at IIITH" class="about-me__img" loading="lazy">
+    </section>
 
-        <div class="achievement-card">
-            <i class="fab fa-python"></i>
-            <h3>Python Certification</h3>
-        </div>
-    </div>
-</section>
+    <!-- WHY HIRE ME -->
+    <section class="why-me">
+        <h2 class="section__title">Why Hire Me?</h2>
 
-<!-- CONTACT -->
-<footer class="footer" id="contact">
+        <div class="why-me__grid">
+            <div class="why-me__item">
+                <h3><i class="fas fa-check-circle"></i> Real-World AI Experience</h3>
+                <p>Proven track record of building tangible machine learning models and deploying them into usable applications.</p>
+            </div>
+            <div class="why-me__item">
+                <h3><i class="fas fa-check-circle"></i> IIIT-H Internship</h3>
+                <p>Hands-on research and industry experience at VISWAM.AI, handling massive datasets and NLP models.</p>
+            </div>
+            <div class="why-me__item">
+                <h3><i class="fas fa-check-circle"></i> Problem-Solving Mindset</h3>
+                <p>Dedicated to writing clean, optimized code to tackle complex computational and data-driven challenges.</p>
+            </div>
+            <div class="why-me__item">
+                <h3><i class="fas fa-check-circle"></i> End-to-End Capability</h3>
+                <p>Not just a data scientist—I can build the full stack to integrate ML models into web and app environments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="my-work" id="work">
+        <h2 class="section__title">Featured Projects</h2>
+        <p class="section__subtitle">Real-world applications I've built</p>
+
+        <div class="portfolio">
+            <a href="portfolio-item.html?project=farmin-ai" class="portfolio__item">
+                <img src="img/portfolio-01.jpg" alt="FARMIN-AI Interface Screenshot" class="portfolio__img" loading="lazy">
+                <div class="portfolio__overlay">
+                    <h3>FARMIN-AI</h3>
+                    <p>Crop prediction system using ML</p>
+                    <span>Python • Streamlit</span>
+                </div>
+            </a>
+
+            <a href="portfolio-item.html?project=dwlr-monitoring" class="portfolio__item">
+                <img src="img/portfolio-02.jpg" alt="DWLR Monitoring Dashboard" class="portfolio__img" loading="lazy">
+                <div class="portfolio__overlay">
+                    <h3>DWLR Monitoring</h3>
+                    <p>Smart India Hackathon project</p>
+                    <span>Data Systems • Analytics</span>
+                </div>
+            </a>
+
+            <a href="portfolio-item.html?project=telugu-speech" class="portfolio__item">
+                <img src="img/portfolio-03.jpg" alt="Speech Corpus Data Visualization" class="portfolio__img" loading="lazy">
+                <div class="portfolio__overlay">
+                    <h3>Speech Corpus</h3>
+                    <p>80+ hrs Telugu dataset for IIITH</p>
+                    <span>NLP • Speech Recognition</span>
+                </div>
+            </a>
+
+            <a href="portfolio-item.html?project=ai-chatbot" class="portfolio__item">
+                <img src="img/portfolio-04.jpg" alt="AI Chatbot conversational interface" class="portfolio__img" loading="lazy">
+                <div class="portfolio__overlay">
+                    <h3>AI Chatbot</h3>
+                    <p>Conversational AI system</p>
+                    <span>Hugging Face • Transformers</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="achievements">
+        <h2 class="section__title">Achievements & Certifications</h2>
+
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <i class="fas fa-code fa-2x"></i>
+                <h3>Smart Coder</h3>
+                <p>Recognized for exceptional algorithmic problem-solving skills.</p>
+            </div>
+
+            <div class="achievement-card">
+                <i class="fas fa-network-wired fa-2x"></i>
+                <h3>Google IT Support</h3>
+                <p>Certified by Google in fundamental IT infrastructure and networking.</p>
+            </div>
+
+            <div class="achievement-card">
+                <i class="fab fa-python fa-2x"></i>
+                <h3>Python Certification</h3>
+                <p>Advanced proficiency certification in Python programming and data structures.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM SECTION (NEW) -->
+    <section class="contact" id="contact" style="padding: 4em 0; text-align: center;">
+        <h2 class="section__title">Get In Touch</h2>
+        <p class="section__subtitle">Have a question or want to work together?</p>
+        
+        <form action="mailto:vishnuvardhancv128@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
     <h3 class="footer__title">Let’s Build Something Impactful 🚀</h3>
 
     <p>I’m actively looking for AI/ML opportunities.</p>
@@ -215,10 +262,10 @@
     <p><i class="fas fa-phone"></i> +91-8309599573</p>
 
     <ul class="social-list">
-        <li><a href="https://github.com/vishnu3vardhan" target="_blank"><i class="fab fa-github"></i></a></li>
-        <li><a href="https://linkedin.com/in/vishnuvardhan028" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="https://kaggle.com/vishnuvardhan" target="_blank"><i class="fab fa-kaggle"></i></a></li>
-        <li><a href="https://huggingface.co/vishnuvardhan" target="_blank"><i class="fas fa-robot"></i></a></li>
+        <li><a href="https://github.com/vishnu3vardhan" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://linkedin.com/in/vishnuvardhan028" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://kaggle.com/vishnuvardhan" target="_blank" rel="noopener noreferrer" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a></li>
+        <li><a href="https://huggingface.co/vishnuvardhan" target="_blank" rel="noopener noreferrer" aria-label="Hugging Face"><i class="fas fa-robot"></i></a></li>
     </ul>
 
     <p class="footer__copyright">
